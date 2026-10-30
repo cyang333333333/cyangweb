@@ -1,8 +1,11 @@
+
+
 class Game {
     constructor() {
         this.canvas = document.getElementById('gameCanvas');
         this.ctx = this.canvas.getContext('2d');
         this.score = 0;
+        
 
         // Define the shapes (example rectangles here)
         this.shapes = [
@@ -75,6 +78,11 @@ class Game {
         // Use requestAnimationFrame for smooth animations
         requestAnimationFrame(() => this.update());
     }
+
+    test() {
+        document.getElementById("section1").addEventListener('click', (event) => {alert("asdasdasd");});
+
+    }
 }
 
 // Initialize the game
@@ -84,3 +92,4 @@ document.myGame = new Game();
 
 // log the score once every second
 setInterval(() => console.log(document.myGame.score), 1000);
+

@@ -26,3 +26,32 @@ class Main {
 
 // Note that we construct the class here, but we don't need to assign it to a variable.
 document.mainClass = new Main();
+
+document.getElementById("section1").addEventListener('click', (event) => { 
+    alert("asdasdasd"); 
+});
+
+document.getElementById("section2").addEventListener('mouseenter', (event) => { 
+    document.getElementById("section2").style.backgroundColor = "black";
+});
+
+document.getElementById("section2").addEventListener('mouseleave', (event) => { 
+    document.getElementById("section2").style.backgroundColor = "";
+});
+
+document.getElementById("section3").addEventListener('mouseenter', (event) => { 
+    document.getElementById("section3").style.backgroundColor = "black";
+});
+
+document.getElementById("section3").addEventListener('mouseleave', (event) => { 
+    document.getElementById("section3").style.backgroundColor = "";
+});
+
+var count = 0;
+document.getElementById("counter2").addEventListener('click', (event) => { 
+    count++
+    document.getElementById('count2').innerHTML = 'clicks: ' + count  + ' times.'
+});
+
+
+
